@@ -17,3 +17,18 @@ Diferentes estratégias de pagamento serão implementadas.
 Observer:
 
 Observadores serão registrados para serem notificados quando um novo pedido for criado.
+
+
+Testando o Sistema
+Inicie o Spring Boot:
+
+Execute a aplicação com PedidosApplication.java.
+Crie um Pedido:
+
+Use o Postman ou curl para enviar uma requisição POST:
+curl -X POST "http://localhost:8080/pedidos?id=1&descricao=Notebook&valor=2500.0&tipoPagamento=cartao"
+
+
+Verifique os Logs:
+
+O console exibirá o método de pagamento utilizado.
